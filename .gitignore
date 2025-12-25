@@ -201,3 +201,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Summary output file
+
+# runv command: python main.py > summary.txt
+
+summary.txt
