@@ -1,11 +1,10 @@
 import os
-from operator import itemgetter
 
 from dotenv import load_dotenv
 from langchain_core.messages import HumanMessage
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.runnables import RunnablePassthrough
+from langchain_core.runnables import RunnableLambda, RunnablePassthrough
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_pinecone import PineconeVectorStore
 
@@ -55,7 +54,7 @@ def retrieve_chain_with_lcel():
     """
     retrieval_chain = (
         RunnablePassthrough.assign(
-            context=itemgetter[str]("question") | retriever | format_docs
+            context=RunnableLambda(lambda x: x["question"]) | retriever | format_docs
         )
         | prompt_template
         | llm
