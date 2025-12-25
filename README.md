@@ -13,7 +13,6 @@ This course is designed to teach you how to QUICKLY harness the power of the Lan
 [![udemy](https://img.shields.io/badge/LangChain%20Udemy%20Course%20Coupon%20%2412.99-brightgreen)](https://www.udemy.com/course/langchain/?couponCode=DEC-2025)
 
 
-
 ## 💡 What You'll Build 
 
 This course takes you through building 7 real-world AI agent projects, from simple hello-world applications to advanced agentic systems:
