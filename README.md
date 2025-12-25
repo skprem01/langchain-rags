@@ -13,6 +13,16 @@ This course is designed to teach you how to QUICKLY harness the power of the Lan
 [![udemy](https://img.shields.io/badge/LangChain%20Udemy%20Course%20Coupon%20%2412.99-brightgreen)](https://www.udemy.com/course/langchain/?couponCode=DEC-2025)
 
 
+alias cls="clear"
+alias docs="cd ~/Documents"
+alias gs="git status"
+alias aev="source .venv/bin/activate"
+alias cls="clear"
+alias runi="python3 ingestion.py"
+alias runv="python3 main.py"
+alias gpm="git push origin main"
+
+
 ## 💡 What You'll Build 
 
 This course takes you through building 7 real-world AI agent projects, from simple hello-world applications to advanced agentic systems:
